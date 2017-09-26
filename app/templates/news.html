@@ -1,0 +1,11 @@
+<div>
+	<h3>all news</h3>
+	<div class="card-deck">
+	  <div class="card" ng-repeat="n in news">
+	    <img class="card-img-top" src="{{n.urlToImage}}" alt="image">
+	    <div class="card-block">
+	      <a href="{{n.url}}">{{n.description}}</a>
+	    </div>
+	  </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+body {
+	font-family: 'Titillium Web', sans-serif;
+}
+.card {
+	min-width: 15rem;
+}
+.card-img-top {
+	max-height: 100%;
+  max-width: 100%;
+}
+a:hover {
+	text-decoration: none;
+}

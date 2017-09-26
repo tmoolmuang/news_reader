@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+    <meta charset="UTF-8">
+    <title>News Reader</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+	<body ng-app="app">
+    <a href="news">News</a>&nbsp;|
+    <a href="sport">Sport</a>&nbsp;|
+    <a href="weather">Weather</a>
+    <hr>
+
+    <ui-view></ui-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/NewsCtrl.js"></script>
+    <script src="scripts/controllers/SportCtrl.js"></script>
+    <script src="scripts/controllers/WeatherCtrl.js"></script>
+    <script src="scripts/services/NewsSvc.js"></script>
+    <script src="scripts/services/SportSvc.js"></script>
+    <script src="scripts/services/WeatherSvc.js"></script>
+	</body>
+</html>
