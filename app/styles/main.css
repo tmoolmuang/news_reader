@@ -1,12 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
 	font-family: 'Titillium Web', sans-serif;
 }
 .card {
-	min-width: 15rem;
-}
-.card-img-top {
-	max-height: 100%;
-  max-width: 100%;
+	margin: 0.5em;
 }
 a:hover {
 	text-decoration: none;
