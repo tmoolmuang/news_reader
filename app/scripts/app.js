@@ -17,10 +17,10 @@
 				templateUrl: "templates/sport.html",
 				controller: "SportCtrl"
 			})
-			.state("weather", {
-				url: "/weather",
-				templateUrl: "templates/weather.html",
-				controller: "WeatherCtrl"
+			.state("entertainment", {
+				url: "/entertainment",
+				templateUrl: "templates/ent.html",
+				controller: "EntCtrl"
 			});
 	}
 	

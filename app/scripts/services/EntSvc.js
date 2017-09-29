@@ -1,9 +1,9 @@
 (function() {
-  function sportSvcFunct($http, $log) {  
-    var Sports = {};
-    var URL = "https://newsapi.org/v1/articles?source=espn&sortBy=top&apiKey=489100a029644ce284601e6d8f31fd61";
+  function entSvcFunct($http, $log) {  
+    var Ents = {};
+    var URL = "https://newsapi.org/v1/articles?source=entertainment-weekly&sortBy=top&apiKey=489100a029644ce284601e6d8f31fd61";
 
-    Sports.getAllSports = function(cb) {
+    Ents.getAllEnts = function(cb) {
       $http({
         url: URL,
         method: "GET"
@@ -15,10 +15,10 @@
       });
     };   
 
-    return Sports;
+    return Ents;
   }
 
   angular
     .module('app')
-    .factory('SportSvc', ['$http', '$log', sportSvcFunct]);
+    .factory('EntSvc', ['$http', '$log', entSvcFunct]);
 })();

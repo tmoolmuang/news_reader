@@ -1,6 +1,8 @@
 (function() {
 	function sportCtrlFunct($scope, SportSvc) {
-		
+		SportSvc.getAllSports(function(r) {
+      $scope.sports = r;
+    });   		
 	}
 
 	angular

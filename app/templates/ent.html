@@ -1,0 +1,15 @@
+<div>
+	<h3>Today's entertainments</h3>
+	<div class="container">
+    <div class="row">
+  	  <div class="col-sm-3" ng-repeat="e in ents">
+        <div class="card">
+    	    <img class="card-img-top img-fluid" src="{{e.urlToImage}}" alt="image">
+    	    <div class="card-block">
+    	      <a href="{{e.url}}">{{e.title}}</a>
+    	    </div>
+        </div>
+  	  </div>
+    </div>
+  </div>
+</div>
