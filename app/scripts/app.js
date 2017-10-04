@@ -23,7 +23,7 @@
 				controller: "EntCtrl"
 			});
 	}
-	
+
 	angular
   	.module("app", ["ui.router"])
     .config(configFunct);
